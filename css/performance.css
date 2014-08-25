@@ -1,0 +1,55 @@
+body {
+  height: 2200px;
+  margin: 0;
+  padding: 0;
+}
+
+.small-row {
+  width: 100%;
+  clear: left;
+}
+
+.small-row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.spacer {
+  width: 100%;
+  height: 50px;
+}
+
+.box {
+  width: 5%;
+  height: 50px;
+  float: left;
+}
+
+.red {
+  background-color: #cc0000;
+}
+
+.orange {
+  background-color: #ed5f21;
+}
+
+.yellow {
+  background-color: #fae300;
+}
+
+.green {
+  background-color: #379c0a;
+}
+
+.blue {
+  background-color: #0a0d9c;
+}
+
+.purple {
+  background-color: #990a9c;
+}
+
+.gray {
+  background-color: #333;
+}

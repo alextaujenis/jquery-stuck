@@ -1,0 +1,54 @@
+body {
+  height: 5000px;
+  margin: 0;
+  padding: 0;
+}
+
+.spacer{
+  width: 100%;
+  height: 150px;
+  background-color: #EEE;
+}
+
+.red, .orange, .yellow, .green, .blue, .purple, .gray {
+  height: 50px;
+  width: 100%;
+  padding-top: 15px;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  opacity: 0.7;
+}
+
+.red {
+  background-color: #cc0000;
+}
+
+.orange {
+  background-color: #ed5f21;
+}
+
+.yellow {
+  background-color: #fae300;
+  color: black;
+}
+
+.green {
+  background-color: #379c0a;
+}
+
+.blue {
+  background-color: #0a0d9c;
+}
+
+.purple {
+  background-color: #990a9c;
+}
+
+.gray {
+  background-color: #333;
+}
+
+.release-container {
+  height: 400px;
+}

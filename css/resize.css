@@ -1,0 +1,30 @@
+body {
+  height: 3000px;
+  margin: 0;
+  padding: 0;
+}
+
+.spacer {
+  width: 100%;
+  height: 140px;
+  background-color: #EEE;
+}
+
+.green, .gray {
+  width: 100%;
+  padding-top: 175px;
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+
+.green {
+  background-color: #379c0a;
+  height: 400px;
+}
+
+.gray {
+  background-color: #333;
+  height: 800px;
+  padding-top: 350px;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/foundation/5.3.3/js/vendor/modernizr.js' type='text/javascript'></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/foundation/5.3.3/js/foundation.min.js'></script>
+  <script src="src/jquery.stuck.js" type="text/javascript"></script>
+
+  <link href='http://cdnjs.cloudflare.com/ajax/libs/foundation/5.3.3/css/foundation.min.css' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" type="text/css" href="css/stack.css">
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $(window).stuck();
+    });
+  </script>
+
+</head>
+<body>
+  <div class="row">
+    <div class="spacer"></div>
+  </div>
+  <div class="row">
+    <div class="columns small-4 stuck">
+      <div class="red">one</div>
+    </div>
+    <div class="columns small-8">&nbsp;</div>
+  </div>
+  <div class="row">
+    <div class="spacer"></div>
+  </div>
+  <div class="row">
+    <div class="columns small-4">&nbsp;</div>
+    <div class="columns small-4 stuck">
+      <div class="orange">two</div>
+    </div>
+    <div class="columns small-4">&nbsp;</div>
+  </div>
+  <div class="row">
+    <div class="spacer"></div>
+  </div>
+  <div class="row">
+    <div class="columns small-6 stuck">
+      <div class="yellow">three</div>
+    </div>
+    <div class="columns small-6">&nbsp;</div>
+  </div>
+  <div class="row">
+    <div class="spacer"></div>
+  </div>
+  <div class="row">
+    <div class="columns small-5">&nbsp;</div>
+    <div class="columns small-7 stuck">
+      <div class="green">four</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="spacer"></div>
+  </div>
+  <div class="row">
+    <div class="columns small-5 stuck">
+      <div class="blue">five</div>
+    </div>
+    <div class="columns small-7">&nbsp;</div>
+  </div>
+  <div class="row">
+    <div class="spacer"></div>
+  </div>
+  <div class="row stuck">
+    <div class="columns small-7">
+      <div class="purple">six</div>
+    </div>
+    <div class="columns small-5">&nbsp;</div>
+  </div>
+  <div class="row">
+    <div class="spacer"></div>
+  </div>
+</body>
+</html>
