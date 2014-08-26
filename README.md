@@ -1,6 +1,6 @@
 # Stuck
 
-  A responsive sticky element jQuery plugin designed for use with [Foundation](http://foundation.zurb.com/).
+  A responsive sticky element jQuery plugin designed for use with [Foundation](http://foundation.zurb.com/), [Bootstrap](http://getbootstrap.com/), or your own css solution.
 
 # Usage
   Check out [the docs](http://alextaujenis.github.io/jquery-stuck/).
