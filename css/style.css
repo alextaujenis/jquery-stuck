@@ -1,0 +1,27 @@
+.code-container, .inline-class, .inline-type {
+  font-family: Consolas, 'Liberation Mono', Courier, monospace;
+}
+
+.inline-type {
+  font-weight: bold;
+}
+
+.code-container .tag, .code-container .title {
+  color: #000080;
+}
+
+.code-container .attribute, {
+  color: #3A9C9C
+}
+
+.code-container .value, .inline-class {
+  color: #D14;
+}
+
+.code-container .tab-2 {
+  padding-left: 1em;
+}
+
+.code-container .tab-4 {
+  padding-left: 2em;
+}
