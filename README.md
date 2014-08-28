@@ -9,7 +9,7 @@
 
 # Examples
 
-  Defined in more detail within [the docs](http://alextaujenis.github.io/jquery-stuck/docs.html).
+  See all of the examples [here](http://alextaujenis.github.io/jquery-stuck/index.html#examples).
 
   * [stuck](http://alextaujenis.github.io/jquery-stuck/gh-pages/example/stuck.html)
   * [release](http://alextaujenis.github.io/jquery-stuck/gh-pages/example/release.html)
