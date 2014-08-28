@@ -1,14 +1,13 @@
 {
     "name": "stuck",
-    "version": "1.0.0",
     "title": "jQuery Stuck",
-    "description": "A responsive sticky element jQuery plugin",
+    "description": "A responsive sticky element jQuery plugin.",
     "keywords": [
-        "jquery",
-        "sticky elements",
-        "sticky",
         "stuck",
+        "sticky",
+        "jquery"
     ],
+    "version": "1.0.2",
     "author": {
         "name": "Alex Taujenis",
         "url": "https://github.com/alextaujenis"
@@ -28,7 +27,8 @@
     "bugs": "https://github.com/alextaujenis/jquery-stuck/issues",
     "homepage": "http://alextaujenis.github.io/jquery-stuck/",
     "docs": "http://alextaujenis.github.io/jquery-stuck/",
+    "download": "https://github.com/alextaujenis/jquery-stuck",
     "dependencies": {
-        "jquery": ">=1.11.1"
+        "jquery": ">=1.5"
     }
 }
