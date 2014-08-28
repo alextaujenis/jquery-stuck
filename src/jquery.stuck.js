@@ -42,6 +42,7 @@
 
         Stuck.prototype.resize = function() {
           this.resizing = true;
+          this.calculateTopOffset();
           this.update();
         };
 
@@ -68,8 +69,8 @@
                 spacer.addClass(name);
               }
             }
-            spacer.height(node.height()).hide().css("background-color", "transparent").insertBefore(node);
-            top = node.offset().top;
+            spacer.height(node.outerHeight()).hide().css("background-color", "transparent").insertBefore(node);
+            top = node.offset().top - parseInt(node.css('margin-top'));
             this.elements.push({
               node: node,
               spacer: spacer,
@@ -106,7 +107,7 @@
                   row_element = elements[z];
                   collision = this.collide(row_element.node, el.node);
                   if (collision) {
-                    value = row_element.top_offset + row_element.node.height();
+                    value = row_element.top_offset + row_element.node.outerHeight(true);
                     if (value > max_height) {
                       max_height = value;
                     }
@@ -170,9 +171,14 @@
           while (i--) {
             el = this.elements[i];
             if (this.resizing) {
-              el.top = el.fixed ? el.spacer.offset().top : el.node.offset().top;
+              if (el.fixed) {
+                el.top = el.spacer.offset().top - parseInt(el.spacer.css('margin-top'));
+              } else {
+                el.top = el.node.offset().top - parseInt(el.node.css('margin-top'));
+              }
               if (el.fixed) {
                 el.node.css({
+                  top: el.top_offset,
                   left: el.spacer.offset().left,
                   width: el.spacer.outerWidth()
                 });

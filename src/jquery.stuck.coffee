@@ -32,6 +32,7 @@
       resize: ->
         # Update the page
         @resizing = true
+        @calculateTopOffset()
         @update()
         return
 
@@ -79,13 +80,13 @@
 
           # Copy the height from the original div onto the spacer, hide the
           # spacer, set its background to nothing, then insert it into the dom
-          spacer.height(node.height())
+          spacer.height(node.outerHeight())
             .hide()
             .css("background-color", "transparent")
             .insertBefore(node)
 
           # Memoize the top starting position of the node on the page
-          top = node.offset().top
+          top = node.offset().top - parseInt(node.css('margin-top'))
 
           # Create an in-memory reference to the node and its properties
           @elements.push
@@ -140,7 +141,7 @@
 
                 if collision
                   # Calculate how much this collision pushes the element down
-                  value = row_element.top_offset + row_element.node.height()
+                  value = row_element.top_offset + row_element.node.outerHeight(true)
 
                   # Only use the max height for all collisions of a row
                   max_height = value if value > max_height
@@ -212,12 +213,16 @@
           # If this is a resize event
           if @resizing
             # Compute where the element top should be on the page
-            el.top = if el.fixed then el.spacer.offset().top else el.node.offset().top
+            if el.fixed
+              el.top = el.spacer.offset().top - parseInt(el.spacer.css('margin-top'))
+            else
+              el.top = el.node.offset().top - parseInt(el.node.css('margin-top'))
 
             # If the element is fixed
             if el.fixed
               # Update it's left and width css positions
               el.node.css
+                top:  el.top_offset
                 left:  el.spacer.offset().left
                 width: el.spacer.outerWidth()
 
