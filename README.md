@@ -11,10 +11,10 @@
 
   Defined in more detail within [the docs](http://alextaujenis.github.io/jquery-stuck/).
 
-  * [stuck](http://alextaujenis.github.io/jquery-stuck/example/stuck.html)
-  * [release](http://alextaujenis.github.io/jquery-stuck/example/release.html)
-  * [responsive](http://alextaujenis.github.io/jquery-stuck/example/responsive.html)
-  * [performance](http://alextaujenis.github.io/jquery-stuck/example/performance.html)
+  * [stuck](http://alextaujenis.github.io/jquery-stuck/gh-pages/example/stuck.html)
+  * [release](http://alextaujenis.github.io/jquery-stuck/gh-pages/example/release.html)
+  * [responsive](http://alextaujenis.github.io/jquery-stuck/gh-pages/example/responsive.html)
+  * [performance](http://alextaujenis.github.io/jquery-stuck/gh-pages/example/performance.html)
 
 # License
 
