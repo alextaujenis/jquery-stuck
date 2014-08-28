@@ -6,247 +6,288 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+  <div class="content">
 
-  <div class="contain-to-grid stuck">
-    <nav class="top-bar" data-topbar role="navigation">
-      <ul class="title-area">
+    <div class="contain-to-grid stuck">
 
-        <li class="name">
-          <h1>
-            <a href="index.html">
-              jQuery Stuck
-            </a>
-          </h1>
-        </li>
+      <nav class="top-bar" data-topbar role="navigation">
+        <ul class="title-area">
 
-      </ul>
-      <section class="top-bar-section">
-        <ul class="right">
-
-          <li>
-            <a href="index.html">
-              docs
-            </a>
-          </li>
-
-          <li>
-            <a href="https://raw.githubusercontent.com/alextaujenis/jquery-stuck/gh-pages/src/jquery.stuck.js">
-              download
-            </a>
-          </li>
-
-          <li>
-            <a href="https://github.com/alextaujenis/jquery-stuck">
-              github
-            </a>
+          <li class="name">
+            <h1>
+              <a href="index.html">
+                jQuery Stuck
+              </a>
+            </h1>
           </li>
 
         </ul>
-      </section>
-    </nav>
-  </div>
+        <section class="top-bar-section">
+          <ul class="right">
 
-  <div class="row">
+            <li>
+              <a href="index.html">
+                docs
+              </a>
+            </li>
 
-    <div class="columns text-center">
-      <h1>
-        jQuery Stuck
-      </h1>
+            <li>
+              <a href="https://raw.githubusercontent.com/alextaujenis/jquery-stuck/gh-pages/src/jquery.stuck.js">
+                download
+              </a>
+            </li>
+
+            <li>
+              <a href="https://github.com/alextaujenis/jquery-stuck">
+                github
+              </a>
+            </li>
+
+          </ul>
+        </section>
+      </nav>
+
     </div>
 
-    <div class="columns text-center">
-      <h4>
-        a responsive sticky element plugin
-      </h4>
-    </div>
+    <div class="row">
 
-    <div class="columns">
-      <h2>
-        Install
-      </h2>
-    </div>
-
-    <div class="columns">
-      <p>
-        Add the latest <b>jQuery</b> and the <b>jQuery Stuck</b> plugin to the head of your
-        html page:
-      <p>
-    </div>
-
-    <div class="columns">
-      <div class="panel code-container">
-        <span class="tag">&lt;<span class="title">script</span>
-        <span class="attribute">src</span>=<span class="value">"http://code.jquery.com/jquery-latest.min.js"</span>
-        <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;</span><span class="tag">&lt;/script&gt;</span>
-        <br />
-        <span class="tag">&lt;<span class="title">script</span>
-        <span class="attribute">src</span>=<span class="value">"src/jquery.stuck.js"</span>
-        <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;</span><span class="tag">&lt;/script&gt;</span>
+      <div class="columns text-center">
+        <h1>
+          jQuery Stuck
+        </h1>
       </div>
-    </div>
 
-    <div class="columns">
-      <p>
-        Then initialize the plugin:
-      <p>
-    </div>
-
-    <div class="columns">
-      <div class="panel code-container">
-        <span class="tag">&lt;<span class="title">script</span>
-        <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;</span>
-        <br />
-        <span class="tab-2">$(document).ready(function(){</span>
-        <br />
-        <span class="tab-4">$(window).stuck();</span>
-        <br />
-        <span class="tab-2">});</span>
-        <br />
-        <span class="tag">&lt;/script&gt;</span>
+      <div class="columns text-center">
+        <h4>
+          a responsive sticky element plugin
+        </h4>
       </div>
-    </div>
-  </div>
 
-  <div class="row">
-
-    <div class="columns">
-      <h2>
-        Usage
-      </h2>
     </div>
 
-    <div class="columns">
-      <h3>
-        Stuck
-      </h3>
-    </div>
+    <div class="row image-grid">
 
-    <div class="columns">
-      <p>
-        Add the <span class="inline-class">stuck</span> class to any responsive <span class="inline-type">row</span> or
-        <span class="inline-type">columns</span> you would like fixed to the top of
-        the page when scrolled past.
-      <p>
-    </div>
-
-    <div class="columns">
-      <div class="panel code-container">
-        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row stuck"</span>&gt;</span>
-        <br />
-        <span class="tab-2">Stuck Content</span>
-        <br />
-        <span class="tag">&lt;<span class="title">/div</span>&gt;</span>
+      <div class="columns small-6 medium-3">
+        <a href="example/stuck.html">
+          <div class="columns title text-center stuck">stuck</div>
+          <img src="img/stuck.png">
+        </a>
       </div>
-    </div>
 
-    <div class="columns">
-      <p>
-        Elements will begin to stick to the top of the page, then stack
-        underneath each other in the order they were inserted into the dom.
-      <p>
-    </div>
-
-    <div class="columns">
-      <div class="panel code-container">
-        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span>
-        <br />
-        <span class="tab-2"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"columns stuck"</span>&gt;</span>Stuck to the top<span class="tag">&lt;/div&gt;</span></span>
-        <br />
-        <span class="tab-2"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"columns stuck"</span>&gt;</span>Stacked under the first column<span class="tag">&lt;/div&gt;</span></span>
-        <br />
-        <span class="tag">&lt;<span class="title">/div</span>&gt;</span>
+      <div class="columns small-6 medium-3">
+        <a href="example/release.html">
+          <div class="columns title text-center stuck">release</div>
+          <img src="img/release.png">
+        </a>
       </div>
-    </div>
 
-    <div class="columns">
-      <p>
-        All <span class="inline-class">stuck</span> elements will slide past each other if they don't overlap, and
-        stack if they collide. This is done for you with collision detection,
-        and not by hard-coding top offsets. Check out the <a
-        href="example/stuck.html">example page</a>.
-      <p>
-    </div>
-
-    <div class="columns">
-      <h3>
-        Release
-      </h3>
-    </div>
-
-    <div class="columns">
-      <p>
-        Elements can be trained to stay at the bottom of a container when
-        scrolling past the border. Just add the <span
-        class="inline-class">release</span> class to your <span class="inline-class">stuck</span> element and
-        put it in a <span class="inline-class">release-container</span>.
-      <p>
-    </div>
-
-    <div class="columns">
-      <div class="panel code-container">
-        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row release-container"</span>&gt;</span>
-        <br />
-        <span class="tab-2"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"columns"</span>&gt;</span>Spacer content<span class="tag">&lt;/div&gt;</span></span>
-        <br />
-        <span class="tab-2"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"columns stuck release"</span>&gt;</span>Stuck until bottom of release-container<span class="tag">&lt;/div&gt;</span></span>
-        <br />
-        <span class="tab-2"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"columns"</span>&gt;</span>Spacer content<span class="tag">&lt;/div&gt;</span></span>
-        <br />
-        <span class="tag">&lt;<span class="title">/div</span>&gt;</span>
+      <div class="columns small-6 medium-3">
+        <a href="example/responsive.html">
+          <div class="columns title text-center stuck">responsive</div>
+          <img src="img/responsive.png">
+        </a>
       </div>
+
+      <div class="columns small-6 medium-3">
+        <a href="example/performance.html">
+          <div class="columns title text-center stuck">performance</div>
+          <img src="img/performance.png">
+        </a>
+      </div>
+
     </div>
 
-    <div class="columns">
-      <p>
-        Try out the <a href="example/release.html">release example</a>.
-      <p>
+
+    <div class="row">
+
+      <div class="columns">
+        <h2>
+          Install
+        </h2>
+      </div>
+
+      <div class="columns">
+        <p>
+          Add the latest <b>jQuery</b> and the <b>jQuery Stuck</b> plugin to the head of your
+          html page:
+        <p>
+      </div>
+
+      <div class="columns">
+        <div class="panel code-container">
+          <span class="tag">&lt;<span class="title">script</span>
+          <span class="attribute">src</span>=<span class="value">"http://code.jquery.com/jquery-latest.min.js"</span>
+          <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;</span><span class="tag">&lt;/script&gt;</span>
+          <br />
+          <span class="tag">&lt;<span class="title">script</span>
+          <span class="attribute">src</span>=<span class="value">"src/jquery.stuck.js"</span>
+          <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;</span><span class="tag">&lt;/script&gt;</span>
+        </div>
+      </div>
+
+      <div class="columns">
+        <p>
+          Then initialize the plugin:
+        <p>
+      </div>
+
+      <div class="columns">
+        <div class="panel code-container">
+          <span class="tag">&lt;<span class="title">script</span>
+          <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;</span>
+          <br />
+          <span class="tab-2">$(document).ready(function(){</span>
+          <br />
+          <span class="tab-4">$(window).stuck();</span>
+          <br />
+          <span class="tab-2">});</span>
+          <br />
+          <span class="tag">&lt;/script&gt;</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="columns">
+        <h2>
+          Usage
+        </h2>
+      </div>
+
+      <div class="columns">
+        <h3>
+          Stuck
+        </h3>
+      </div>
+
+      <div class="columns">
+        <p>
+          Add the <span class="inline-class">stuck</span> class to any responsive <span class="inline-type">row</span> or
+          <span class="inline-type">columns</span> you would like fixed to the top of
+          the page when scrolled past.
+        <p>
+      </div>
+
+      <div class="columns">
+        <div class="panel code-container">
+          <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row stuck"</span>&gt;</span>
+          <br />
+          <span class="tab-2">Stuck Content</span>
+          <br />
+          <span class="tag">&lt;<span class="title">/div</span>&gt;</span>
+        </div>
+      </div>
+
+      <div class="columns">
+        <p>
+          Elements will begin to stick to the top of the page, then stack
+          underneath each other in the order they were inserted into the dom.
+        <p>
+      </div>
+
+      <div class="columns">
+        <div class="panel code-container">
+          <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span>
+          <br />
+          <span class="tab-2"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"columns stuck"</span>&gt;</span>Stuck to the top<span class="tag">&lt;/div&gt;</span></span>
+          <br />
+          <span class="tab-2"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"columns stuck"</span>&gt;</span>Stacked under the first column<span class="tag">&lt;/div&gt;</span></span>
+          <br />
+          <span class="tag">&lt;<span class="title">/div</span>&gt;</span>
+        </div>
+      </div>
+
+      <div class="columns">
+        <p>
+          All <span class="inline-class">stuck</span> elements will slide past each other if they don't overlap, and
+          stack if they collide. This is done for you with collision detection,
+          and not by hard-coding top offsets. Check out the <a
+          href="example/stuck.html">example page</a>.
+        <p>
+      </div>
+
+      <div class="columns">
+        <h3>
+          Release
+        </h3>
+      </div>
+
+      <div class="columns">
+        <p>
+          Elements can be trained to stay at the bottom of a container when
+          scrolling past the border. Just add the <span
+          class="inline-class">release</span> class to your <span class="inline-class">stuck</span> element and
+          put it in a <span class="inline-class">release-container</span>.
+        <p>
+      </div>
+
+      <div class="columns">
+        <div class="panel code-container">
+          <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"row release-container"</span>&gt;</span>
+          <br />
+          <span class="tab-2"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"columns"</span>&gt;</span>Spacer content<span class="tag">&lt;/div&gt;</span></span>
+          <br />
+          <span class="tab-2"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"columns stuck release"</span>&gt;</span>Stuck until bottom of release-container<span class="tag">&lt;/div&gt;</span></span>
+          <br />
+          <span class="tab-2"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"columns"</span>&gt;</span>Spacer content<span class="tag">&lt;/div&gt;</span></span>
+          <br />
+          <span class="tag">&lt;<span class="title">/div</span>&gt;</span>
+        </div>
+      </div>
+
+      <div class="columns">
+        <p>
+          Try out the <a href="example/release.html">release example</a>.
+        <p>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="columns">
+        <h2>
+          Being Responsive
+        </h2>
+      </div>
+
+      <div class="columns">
+        <p>
+          Your responsive elements may jump up or down the page on resize, but this
+          plugin will always maintain the correct position and stacking order.
+          Scroll and resize this <a href="example/responsive.html">responsive example</a>.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="columns">
+        <h2>
+          Performance
+        </h2>
+      </div>
+
+      <div class="columns">
+        <p>
+          Performance is somewhat of a concern since this plugin uses collision
+          detection. The collision matrix is calculated on page load so you may
+          notice a small delay up-front, but then responsive scrolling and
+          resizing afterward.
+        </p>
+        <p>
+          For normal usage there should be no noticeable delay, but go ahead and
+          feel the load time on this 400+ node <a
+          href="example/performance.html">performance example</a>.
+        </p>
+      </div>
+
     </div>
 
   </div>
-
-  <div class="row">
-
-    <div class="columns">
-      <h2>
-        Being Responsive
-      </h2>
-    </div>
-
-    <div class="columns">
-      <p>
-        Your responsive elements may jump up or down the page on resize, but this
-        plugin will always maintain the correct position and stacking order.
-        Scroll and resize this <a href="example/responsive.html">responsive example</a>.
-      </p>
-    </div>
-
-  </div>
-
-  <div class="row">
-
-    <div class="columns">
-      <h2>
-        Performance
-      </h2>
-    </div>
-
-    <div class="columns">
-      <p>
-        Performance is somewhat of a concern since this plugin uses collision
-        detection. The collision matrix is calculated on page load so you may
-        notice a small delay up-front, but then responsive scrolling and
-        resizing afterward.
-      </p>
-      <p>
-        For normal usage there should be no noticeable delay, but go ahead and
-        feel the load time on this 400+ node <a
-        href="example/performance.html">performance example</a>.
-      </p>
-    </div>
-
-  </div>
-
-
   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/foundation/5.3.3/js/vendor/modernizr.js' type='text/javascript'></script>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/foundation/5.3.3/js/foundation.min.js'></script>

@@ -1,3 +1,17 @@
+.content {
+  padding-bottom: 50px;
+}
+
+h2 {
+  margin: 20px 0px 15px 0px;
+  border-bottom: solid 1px #CCC;
+}
+
+h3 {
+  margin: 15px 0px 10px 0px;
+  border-bottom: solid 1px #EEE;
+}
+
 .code-container, .inline-class, .inline-type {
   font-family: Consolas, 'Liberation Mono', Courier, monospace;
 }
@@ -24,4 +38,30 @@
 
 .code-container .tab-4 {
   padding-left: 2em;
+}
+
+.contain-to-grid {
+  margin-bottom: 20px;
+}
+
+.image-grid {
+  padding: 25px 0px;
+}
+
+.image-grid .title {
+  margin-top: 5px;
+  display: block;
+  color: white;
+  background-color: #333;
+  font-size: 0.8125rem;
+  padding: 5px;
+}
+
+.image-grid .title:hover {
+  background-color: #272727;
+}
+
+.image-grid img {
+  border: solid 1px #CCC;
+  padding: 10px;
 }
