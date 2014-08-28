@@ -62,7 +62,7 @@
 
     </div>
 
-    <div class="row branding">
+    <div id="branding" class="row">
 
       <div class="columns text-center">
         <h1>
@@ -79,13 +79,17 @@
         </h4>
       </div>
 
+      <div class="columns text-center">
+        <a href="docs.html" class="button">View the Docs</a>
+        <a href="https://raw.githubusercontent.com/alextaujenis/jquery-stuck/gh-pages/src/jquery.stuck.js" class="button last">Download</a>
+      </div>
+
     </div>
 
     <div class="row">
       <div class="columns">
-        <h2 class="text-center">
+        <h2 id="examples" class="text-center">
           Examples
-          <a name="examples">
         </h2>
       </div>
     </div>
@@ -147,7 +151,18 @@
 
   <script type="text/javascript">
     $(document).ready(function(){
-      $(window).stuck();
+      var w = $(window);
+      var branding = $("#branding");
+
+      var brandingHeight = function(){
+        var value = ((w.height() * 0.75) - branding.height()) / 2;
+        if(value < 0){value = 0;}
+        branding.css({"padding-top": value, "padding-bottom": value});
+      }
+
+      brandingHeight();
+      w.stuck();
+      w.resize(brandingHeight);
     });
   </script>
 

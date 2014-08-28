@@ -12,8 +12,12 @@ h3 {
   border-bottom: solid 1px #EEE;
 }
 
-.branding {
-  padding: 300px 0px;
+#branding .button {
+  margin-top: 30px;
+}
+
+#branding .button.last {
+  margin-left: 20px;
 }
 
 .lf::before {
