@@ -1,0 +1,34 @@
+body {
+  height: 3000px;
+  margin: 0;
+  padding: 0;
+}
+
+.green, .blue, .spacer{
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.green, .blue {
+  height: 200px;
+  padding-top: 75px;
+}
+
+.green {
+  background-color: #379c0a;
+}
+
+.blue {
+  background-color: #0a0d9c;
+}
+
+.spacer {
+  height: 140px;
+  background-color: #EEE;
+}
+
+.margins {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}

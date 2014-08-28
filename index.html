@@ -28,7 +28,19 @@
 
             <li>
               <a href="index.html">
+                home
+              </a>
+            </li>
+
+            <li>
+              <a href="docs.html">
                 docs
+              </a>
+            </li>
+
+            <li>
+              <a href="index.html#examples">
+                examples
               </a>
             </li>
 
@@ -62,155 +74,64 @@
         <h4>
           a responsive sticky element plugin
         </h4>
+        <h4>
+          with collision detection
+        </h4>
       </div>
 
+    </div>
+
+    <div class="row">
+      <div class="columns">
+        <h2 class="text-center">
+          Examples
+          <a name="examples">
+        </h2>
+      </div>
     </div>
 
     <div class="row image-grid">
 
-      <div class="columns small-6 medium-3">
+      <div class="columns small-6 medium-4">
         <a href="gh-pages/example/stuck.html">
-          <div class="columns title text-center stuck">stuck</div>
+          <div class="columns title text-center">stuck</div>
           <img src="gh-pages/img/stuck.png">
         </a>
       </div>
 
-      <div class="columns small-6 medium-3">
+      <div class="columns small-6 medium-4">
         <a href="gh-pages/example/release.html">
-          <div class="columns title text-center stuck">release</div>
+          <div class="columns title text-center">release</div>
           <img src="gh-pages/img/release.png">
         </a>
       </div>
 
-      <div class="columns small-6 medium-3">
+      <div class="columns small-6 medium-4">
+        <a href="gh-pages/example/margins.html">
+          <div class="columns title text-center">margins</div>
+          <img src="gh-pages/img/margins.png">
+        </a>
+      </div>
+
+      <div class="columns small-6 medium-4">
+        <a href="#examples">
+          <div class="columns title text-center">dynamic</div>
+          <img src="gh-pages/img/dynamic.png">
+        </a>
+      </div>
+
+      <div class="columns small-6 medium-4">
         <a href="gh-pages/example/responsive.html">
-          <div class="columns title text-center stuck">responsive</div>
+          <div class="columns title text-center">responsive</div>
           <img src="gh-pages/img/responsive.png">
         </a>
       </div>
 
-      <div class="columns small-6 medium-3">
+      <div class="columns small-6 medium-4">
         <a href="gh-pages/example/performance.html">
-          <div class="columns title text-center stuck">performance</div>
+          <div class="columns title text-center">performance</div>
           <img src="gh-pages/img/performance.png">
         </a>
-      </div>
-
-    </div>
-
-
-    <div class="row">
-
-      <div class="columns">
-        <h2>
-          Install
-        </h2>
-
-        <p>
-          Add the latest <b>jQuery</b> and <b>jQuery Stuck</b> to the head of your
-          html page, then initialize the plugin.
-        <p>
-
-        <pre class="language-markup" data-src="gh-pages/code-snippets/snippet-1.html"></pre>
-
-      </div>
-
-    </div>
-
-    <div class="row">
-
-      <div class="columns">
-        <h2>
-          Usage
-        </h2>
-
-        <h3>
-          Stuck
-        </h3>
-
-        <p>
-          Add the <span class="inline-class">.stuck</span> class to any
-          responsive <span class="inline-type">.row</span> or <span
-          class="inline-type">.columns</span> you would like fixed to the top
-          of the page when scrolled past.
-        <p>
-
-        <pre data-src="gh-pages/code-snippets/snippet-2.html"></pre>
-
-        <p>
-          Elements will begin to stick to the top of the page, then stack
-          underneath each other in the order they were inserted into the dom.
-        <p>
-
-        <pre data-src="gh-pages/code-snippets/snippet-3.html"></pre>
-
-        <p>
-          All <span class="inline-class">.stuck</span> elements will slide
-          past each other if they don't overlap, or stack if they collide.
-          This is done for you with collision detection and not by hard-coding
-          top offsets. Check out the <a
-          href="gh-pages/example/stuck.html">example page</a>.
-        <p>
-      </div>
-
-      <div class="columns">
-        <h3>
-          Release
-        </h3>
-
-        <p>
-          Elements can be trained to stay at the bottom of a container when
-          scrolling past the border. Just add the <span
-          class="inline-class">.release</span> class to your <span
-          class="inline-class">.stuck</span> element, then put it in a <span
-          class="inline-class">.release-container</span>.
-        <p>
-
-        <pre data-src="gh-pages/code-snippets/snippet-4.html" class="language-markup"></pre>
-
-        <p>
-          Try out the <a href="gh-pages/example/release.html">release example</a>.
-        <p>
-      </div>
-
-    </div>
-
-    <div class="row">
-
-      <div class="columns">
-        <h2>
-          Being Responsive
-        </h2>
-
-        <p>
-          Your responsive elements may jump up or down the page on resize, but
-          this plugin will always maintain the correct position and stacking
-          order. Scroll and resize this <a
-          href="gh-pages/example/responsive.html">responsive example</a>.
-        </p>
-      </div>
-
-    </div>
-
-    <div class="row">
-
-      <div class="columns">
-        <h2>
-          Performance
-        </h2>
-
-        <p>
-          Performance is somewhat of a concern since this plugin uses collision
-          detection. The collision matrix is calculated on page load so you may
-          notice a small delay up-front, but then responsive scrolling and
-          resizing afterward.
-        </p>
-
-        <p>
-          For normal usage there should be no noticeable delay, but go ahead and
-          feel the load time on this 400+ node <a
-          href="gh-pages/example/performance.html">performance example</a>.
-        </p>
       </div>
 
     </div>

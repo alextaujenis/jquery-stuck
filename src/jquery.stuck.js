@@ -241,7 +241,7 @@
           this.resizing = false;
         };
 
-        Stuck.prototype.remove = function() {
+        Stuck.prototype.destroy = function() {
           var i;
           i = this.elements.length;
           while (i--) {

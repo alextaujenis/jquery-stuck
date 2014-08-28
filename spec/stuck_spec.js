@@ -47,7 +47,7 @@
       this.html_body.animate({
         scrollTop: 0
       }, 0);
-      this.stuck_plugin.remove();
+      this.stuck_plugin.destroy();
       this.spacer_div.remove();
       this.stuck_div.remove();
       this.second_stuck_div.remove();

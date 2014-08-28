@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery Stuck</title>
+  <link href='http://cdnjs.cloudflare.com/ajax/libs/foundation/5.3.3/css/foundation.min.css' rel='stylesheet' type='text/css' />
+  <link href='gh-pages/css/prism-theme.css' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" type="text/css" href="gh-pages/css/style.css">
+</head>
+<body>
+  <div class="content">
+
+    <div class="contain-to-grid stuck">
+
+      <nav class="top-bar" data-topbar role="navigation">
+        <ul class="title-area">
+
+          <li class="name">
+            <h1>
+              <a href="index.html">
+                jQuery Stuck
+              </a>
+            </h1>
+          </li>
+
+        </ul>
+        <section class="top-bar-section">
+          <ul class="right">
+
+            <li>
+              <a href="index.html">
+                home
+              </a>
+            </li>
+
+            <li>
+              <a href="docs.html">
+                docs
+              </a>
+            </li>
+
+            <li>
+              <a href="index.html#examples">
+                examples
+              </a>
+            </li>
+
+            <li>
+              <a href="https://raw.githubusercontent.com/alextaujenis/jquery-stuck/gh-pages/src/jquery.stuck.js">
+                download
+              </a>
+            </li>
+
+            <li>
+              <a href="https://github.com/alextaujenis/jquery-stuck">
+                github
+              </a>
+            </li>
+
+          </ul>
+        </section>
+      </nav>
+
+    </div>
+
+    <div class="row">
+
+      <div class="columns">
+        <h2>
+          Install
+        </h2>
+
+        <p>
+          Add the latest <b>jQuery</b> and <b>jQuery Stuck</b> to the head of your
+          html page, then initialize the plugin.
+        <p>
+
+        <pre class="language-markup" data-src="gh-pages/code-snippets/snippet-1.html"></pre>
+
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="columns">
+        <h2>
+          Usage
+        </h2>
+
+        <h3>
+          Stuck
+        </h3>
+
+        <p>
+          Add the <span class="inline-class">.stuck</span> class to any
+          responsive <span class="inline-type">.row</span> or <span
+          class="inline-type">.columns</span> you would like fixed to the top
+          of the page when scrolled past.
+        <p>
+
+        <pre data-src="gh-pages/code-snippets/snippet-2.html"></pre>
+
+        <p>
+          Elements will begin to stick to the top of the page, then stack
+          underneath each other in the order they were inserted into the dom.
+        <p>
+
+        <pre data-src="gh-pages/code-snippets/snippet-3.html"></pre>
+
+        <p>
+          All <span class="inline-class">.stuck</span> elements will slide
+          past each other if they don't overlap, or stack if they collide.
+          This is done for you with collision detection and not by hard-coding
+          top offsets. Check out the <a
+          href="gh-pages/example/stuck.html">example page</a>.
+        <p>
+      </div>
+
+      <div class="columns">
+        <h3>
+          Release
+        </h3>
+
+        <p>
+          Elements can be trained to stay at the bottom of a container when
+          scrolling past the border. Just add the <span
+          class="inline-class">.release</span> class to your <span
+          class="inline-class">.stuck</span> element, then put it in a <span
+          class="inline-class">.release-container</span>.
+        <p>
+
+        <pre data-src="gh-pages/code-snippets/snippet-4.html" class="language-markup"></pre>
+
+        <p>
+          Try out the <a href="gh-pages/example/release.html">release example</a>.
+        <p>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="columns">
+        <h2>
+          Being Responsive
+        </h2>
+
+        <p>
+          Your responsive elements may jump up or down the page on resize, but
+          this plugin will always maintain the correct position and stacking
+          order. Scroll and resize this <a
+          href="gh-pages/example/responsive.html">responsive example</a>.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="columns">
+        <h2>
+          Performance
+        </h2>
+
+        <p>
+          Performance is somewhat of a concern since this plugin uses collision
+          detection. The collision matrix is calculated on page load so you may
+          notice a small delay up-front, but then responsive scrolling and
+          resizing afterward.
+        </p>
+
+        <p>
+          For normal usage there should be no noticeable delay, but go ahead and
+          feel the load time on this 400+ node <a
+          href="gh-pages/example/performance.html">performance example</a>.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/foundation/5.3.3/js/vendor/modernizr.js' type='text/javascript'></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/foundation/5.3.3/js/foundation.min.js'></script>
+  <script src="gh-pages/js/prism-theme.min.js" type="text/javascript"></script>
+  <script src="src/jquery.stuck.js" type="text/javascript"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $(window).stuck();
+    });
+  </script>
+
+</body>
+</html>

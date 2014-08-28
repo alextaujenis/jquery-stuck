@@ -7,7 +7,7 @@
         "sticky",
         "jquery"
     ],
-    "version": "1.0.2",
+    "version": "1.0.3",
     "author": {
         "name": "Alex Taujenis",
         "url": "https://github.com/alextaujenis"
@@ -26,7 +26,7 @@
     ],
     "bugs": "https://github.com/alextaujenis/jquery-stuck/issues",
     "homepage": "http://alextaujenis.github.io/jquery-stuck/",
-    "docs": "http://alextaujenis.github.io/jquery-stuck/",
+    "docs": "http://alextaujenis.github.io/jquery-stuck/docs.html",
     "download": "https://github.com/alextaujenis/jquery-stuck",
     "dependencies": {
         "jquery": ">=1.5"

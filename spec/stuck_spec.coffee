@@ -67,7 +67,7 @@ describe "jQuery.Autohide", ->
     @html_body.animate({scrollTop: 0}, 0)
 
     # Plugin cleanup
-    @stuck_plugin.remove()
+    @stuck_plugin.destroy()
 
     # Test cleanup
     @spacer_div.remove()

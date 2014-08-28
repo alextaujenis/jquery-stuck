@@ -305,7 +305,7 @@
         @resizing = false
         return
 
-      remove: ->
+      destroy: ->
         # Remove all added spacers
         i = @elements.length
         @elements[i].spacer.remove() while i--
