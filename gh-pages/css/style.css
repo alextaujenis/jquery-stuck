@@ -1,3 +1,22 @@
+.body-bg {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  /* Gradient */
+  background: rgb(244,251,255);
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(244,251,255,1) 0%, rgba(229,246,255,1) 28%, rgba(102,182,252,1) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(244,251,255,1)), color-stop(28%,rgba(229,246,255,1)), color-stop(100%,rgba(102,182,252,1)));
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(244,251,255,1) 0%,rgba(229,246,255,1) 28%,rgba(102,182,252,1) 100%);
+  background: -o-radial-gradient(center, ellipse cover,  rgba(244,251,255,1) 0%,rgba(229,246,255,1) 28%,rgba(102,182,252,1) 100%);
+  background: -ms-radial-gradient(center, ellipse cover,  rgba(244,251,255,1) 0%,rgba(229,246,255,1) 28%,rgba(102,182,252,1) 100%);
+  background: radial-gradient(ellipse at center,  rgba(244,251,255,1) 0%,rgba(229,246,255,1) 28%,rgba(102,182,252,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4fbff', endColorstr='#66b6fc',GradientType=1 );
+}
+
 .content {
   padding-bottom: 50px;
 }
@@ -56,4 +75,5 @@ h3 {
 .image-grid img {
   border: solid 1px #CCC;
   padding: 10px;
+  background-color: white;
 }

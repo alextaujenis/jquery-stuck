@@ -7,13 +7,13 @@
   <link rel="stylesheet" type="text/css" href="gh-pages/css/style.css">
 </head>
 <body>
+  <div class="body-bg"></div>
   <div class="content">
 
     <div class="contain-to-grid stuck">
-
       <nav class="top-bar" data-topbar role="navigation">
-        <ul class="title-area">
 
+        <ul class="title-area">
           <li class="name">
             <h1>
               <a href="index.html">
@@ -21,55 +21,47 @@
               </a>
             </h1>
           </li>
-
         </ul>
+
         <section class="top-bar-section">
           <ul class="right">
-
             <li>
               <a href="index.html">
                 home
               </a>
             </li>
-
             <li>
               <a href="docs.html">
                 docs
               </a>
             </li>
-
             <li>
               <a href="index.html#examples">
                 examples
               </a>
             </li>
-
             <li>
               <a href="https://raw.githubusercontent.com/alextaujenis/jquery-stuck/gh-pages/src/jquery.stuck.js">
                 download
               </a>
             </li>
-
             <li>
               <a href="https://github.com/alextaujenis/jquery-stuck">
                 github
               </a>
             </li>
-
           </ul>
         </section>
-      </nav>
 
+      </nav>
     </div>
 
     <div id="branding" class="row">
-
       <div class="columns text-center">
         <h1>
           jQuery Stuck
         </h1>
       </div>
-
       <div class="columns text-center">
         <h4>
           a responsive sticky element plugin
@@ -78,12 +70,14 @@
           with collision detection
         </h4>
       </div>
-
       <div class="columns text-center">
-        <a href="docs.html" class="button">View the Docs</a>
-        <a href="https://raw.githubusercontent.com/alextaujenis/jquery-stuck/gh-pages/src/jquery.stuck.js" class="button last">Download</a>
+        <a href="docs.html" class="button">
+          View the Docs
+        </a>
+        <a href="https://raw.githubusercontent.com/alextaujenis/jquery-stuck/gh-pages/src/jquery.stuck.js" class="button last">
+          Download
+        </a>
       </div>
-
     </div>
 
     <div class="row">
@@ -98,71 +92,73 @@
 
       <div class="columns small-6 medium-4">
         <a href="gh-pages/example/stuck.html">
-          <div class="columns title text-center">stuck</div>
+          <div class="columns title text-center">
+            stuck
+          </div>
           <img src="gh-pages/img/stuck.png">
         </a>
       </div>
 
       <div class="columns small-6 medium-4">
         <a href="gh-pages/example/release.html">
-          <div class="columns title text-center">release</div>
+          <div class="columns title text-center">
+            release
+          </div>
           <img src="gh-pages/img/release.png">
         </a>
       </div>
 
       <div class="columns small-6 medium-4">
         <a href="gh-pages/example/margins.html">
-          <div class="columns title text-center">margins</div>
+          <div class="columns title text-center">
+            margins
+          </div>
           <img src="gh-pages/img/margins.png">
         </a>
       </div>
 
       <div class="columns small-6 medium-4">
         <a href="#examples">
-          <div class="columns title text-center">dynamic</div>
+          <div class="columns title text-center">
+            dynamic
+          </div>
           <img src="gh-pages/img/dynamic.png">
         </a>
       </div>
 
       <div class="columns small-6 medium-4">
         <a href="gh-pages/example/responsive.html">
-          <div class="columns title text-center">responsive</div>
+          <div class="columns title text-center">
+            responsive
+          </div>
           <img src="gh-pages/img/responsive.png">
         </a>
       </div>
 
       <div class="columns small-6 medium-4">
         <a href="gh-pages/example/performance.html">
-          <div class="columns title text-center">performance</div>
+          <div class="columns title text-center">
+            performance
+          </div>
           <img src="gh-pages/img/performance.png">
         </a>
       </div>
-
     </div>
 
   </div>
-
 
   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/foundation/5.3.3/js/vendor/modernizr.js' type='text/javascript'></script>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/foundation/5.3.3/js/foundation.min.js'></script>
   <script src="gh-pages/js/prism-theme.min.js" type="text/javascript"></script>
+  <script src="gh-pages/js/app.js" type="text/javascript"></script>
+  <script src="gh-pages/js/branding.js" type="text/javascript"></script>
   <script src="src/jquery.stuck.js" type="text/javascript"></script>
 
   <script type="text/javascript">
     $(document).ready(function(){
-      var w = $(window);
-      var branding = $("#branding");
-
-      var brandingHeight = function(){
-        var value = ((w.height() * 0.75) - branding.height()) / 2;
-        if(value < 0){value = 0;}
-        branding.css({"padding-top": value, "padding-bottom": value});
-      }
-
-      brandingHeight();
-      w.stuck();
-      w.resize(brandingHeight);
+      new App.Branding("#branding");
+      $(window).stuck()
     });
   </script>
 

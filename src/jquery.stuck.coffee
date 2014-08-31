@@ -1,4 +1,4 @@
-# jQuery Stuck v1.0.2
+# jQuery Stuck v1.0.3
 # (c) 2014 Alex Taujenis
 # Distributed under the MIT license
 
