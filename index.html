@@ -21,6 +21,10 @@
               </a>
             </h1>
           </li>
+
+          <li class="toggle-topbar menu-icon">
+            <a href="#"><span></span></a>
+          </li>
         </ul>
 
         <section class="top-bar-section">
@@ -142,11 +146,14 @@
       </div>
     </div>
 
+
   </div>
 
-  <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/foundation/5.3.3/js/vendor/modernizr.js' type='text/javascript'></script>
+  <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/foundation/5.3.3/js/vendor/fastclick.js'></script>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/foundation/5.3.3/js/foundation.min.js'></script>
+
   <script src="gh-pages/js/prism-theme.min.js" type="text/javascript"></script>
   <script src="gh-pages/js/app.js" type="text/javascript"></script>
   <script src="gh-pages/js/branding.js" type="text/javascript"></script>
@@ -154,10 +161,10 @@
 
   <script type="text/javascript">
     $(document).ready(function(){
+      $(document).foundation();
       new App.Branding("#branding");
-      $(window).stuck()
+      $(window).stuck();
     });
   </script>
-
 </body>
 </html>
