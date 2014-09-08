@@ -268,7 +268,7 @@
               top:       el.top_offset
               left:      el.spacer.offset().left
               width:     el.spacer.outerWidth()
-              "z-index": 999
+              "z-index": 99
 
           # If the element is not fixed and the window is scrolled past its stacked position
           if !el.fixed && window_top > el.top - el.top_offset
@@ -284,7 +284,7 @@
               top:       el.top_offset
               left:      el.spacer.offset().left
               width:     el.spacer.outerWidth()
-              "z-index": 999
+              "z-index": 99
 
           # If the element is fixed and the window is scrolled back above its position
           if el.fixed && window_top < el.top - el.top_offset

@@ -212,7 +212,7 @@
                 top: el.top_offset,
                 left: el.spacer.offset().left,
                 width: el.spacer.outerWidth(),
-                "z-index": 999
+                "z-index": 99
               });
             }
             if (!el.fixed && window_top > el.top - el.top_offset) {
@@ -223,7 +223,7 @@
                 top: el.top_offset,
                 left: el.spacer.offset().left,
                 width: el.spacer.outerWidth(),
-                "z-index": 999
+                "z-index": 99
               });
             }
             if (el.fixed && window_top < el.top - el.top_offset) {
