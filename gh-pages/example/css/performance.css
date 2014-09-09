@@ -17,12 +17,12 @@ body {
 
 .spacer {
   width: 100%;
-  height: 50px;
+  height: 75px;
 }
 
 .box {
   width: 5%;
-  height: 50px;
+  height: 75px;
   float: left;
 }
 
