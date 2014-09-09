@@ -24,7 +24,7 @@
           </li>
 
           <li class="toggle-topbar menu-icon">
-            <a href="#"><span></span></a>
+            <a href="#examples"><span></span></a>
           </li>
         </ul>
 
@@ -76,16 +76,22 @@
           </h4>
         </div>
 
-        <div class="columns medium-3 hide-for-small-only clearfix">&nbsp;</div>
-        <div class="columns small-8 small-centered medium-uncentered medium-3 text-center clearfix">
+        <div class="columns medium-3 hide-for-small-only">&nbsp;</div>
+        <div class="columns small-8 small-centered medium-uncentered medium-3 text-centerx">
           <a href="docs.html" class="button expand">
-            View the Docs
+            Read the Docs
           </a>
         </div>
 
-        <div class="columns small-8 small-centered medium-uncentered medium-3 text-center clearfix">
+        <div class="columns small-8 small-centered medium-uncentered medium-3 text-center">
           <a href="https://raw.githubusercontent.com/alextaujenis/jquery-stuck/gh-pages/src/jquery.stuck.js" class="button expand">
             Download
+          </a>
+        </div>
+
+        <div class="columns text-center">
+          <a href="#examples" id="scroll-to-examples">
+            view examples
           </a>
         </div>
       </div>
@@ -183,6 +189,11 @@
       // Create a class that closes the Foundation mobile nav dropdown when clicked
       $(".close-topbar").click(function(){
         $(".top-bar").removeClass("expanded");
+      });
+
+      // Click examples link to scroll down
+      $("#scroll-to-examples").click(function(){
+        $("html body").animate({scrollTop: $('#examples').offset().top}, 1000);
       });
     });
   </script>
