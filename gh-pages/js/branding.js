@@ -4,7 +4,6 @@
     function Branding(el) {
       this.el = $(el);
       this.window = $(window);
-      this.offset = this.el.height() + this.el.offset().top;
       this.resize();
       this.window.resize((function(_this) {
         return function() {
@@ -15,14 +14,11 @@
     }
 
     Branding.prototype.resize = function() {
-      var value;
-      value = ((this.window.height()) - this.offset) / 2;
-      if (value < 0) {
-        value = 0;
-      }
+      var padding;
+      padding = (this.window.height() - this.el.height()) / 2;
       this.el.css({
-        "padding-top": value,
-        "padding-bottom": value
+        "padding-top": padding - this.el.offset().top,
+        "padding-bottom": padding
       });
     };
 

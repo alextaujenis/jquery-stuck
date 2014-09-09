@@ -4,7 +4,6 @@ class App.Branding
     # Memoize for performance
     @el = $(el)
     @window = $(window)
-    @offset = @el.height() + @el.offset().top
 
     # Resize on page load
     @resize()
@@ -14,12 +13,9 @@ class App.Branding
     return
 
   resize: ->
-    # Sneek peek the top 25% of content below the branding window
-    value = ((@window.height()) - @offset) / 2
-    value = 0 if value < 0
+    padding = (@window.height() - @el.height()) / 2
 
     @el.css
-      "padding-top":    value
-      "padding-bottom": value
-
+      "padding-top":    padding - @el.offset().top
+      "padding-bottom": padding
     return
