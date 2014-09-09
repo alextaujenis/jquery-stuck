@@ -16,7 +16,7 @@
 
     Branding.prototype.resize = function() {
       var value;
-      value = ((this.window.height() * 0.80) - this.offset) / 2;
+      value = ((this.window.height()) - this.offset) / 2;
       if (value < 0) {
         value = 0;
       }

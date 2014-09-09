@@ -15,7 +15,7 @@ class App.Branding
 
   resize: ->
     # Sneek peek the top 25% of content below the branding window
-    value = ((@window.height() * 0.80) - @offset) / 2
+    value = ((@window.height()) - @offset) / 2
     value = 0 if value < 0
 
     @el.css
