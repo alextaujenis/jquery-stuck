@@ -26,30 +26,32 @@ body {
   float: left;
 }
 
-.red {
-  background-color: #cc0000;
+.light-blue, .dark-blue, .brown, .red, .yellow, .green {
+  -webkit-box-shadow: 3px 7px 35px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 7px 35px 0px rgba(0,0,0,0.75);
+  box-shadow: 3px 7px 35px 0px rgba(0,0,0,0.75);
 }
 
-.orange {
-  background-color: #ed5f21;
+.light-blue {
+  background-color: #35a7ff;
+}
+
+.dark-blue {
+  background-color: #38618c;
+}
+
+.brown {
+  background-color: #524948;
+}
+
+.red {
+  background-color: #ff5964;
 }
 
 .yellow {
-  background-color: #fae300;
+  background-color: #ffe74c;
 }
 
 .green {
-  background-color: #379c0a;
-}
-
-.blue {
-  background-color: #0a0d9c;
-}
-
-.purple {
-  background-color: #990a9c;
-}
-
-.gray {
-  background-color: #333;
+  background-color: #3e8914;
 }

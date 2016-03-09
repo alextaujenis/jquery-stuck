@@ -8,9 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
-  <div class="body-bg blue-gradient"></div>
   <div class="content">
-
     <div class="contain-to-grid stuck">
       <nav class="top-bar" data-topbar role="navigation">
 
@@ -61,102 +59,103 @@
       </nav>
     </div>
 
-    <div id="reveal" style="opacity: 0.001">
-      <div id="branding" class="row">
+    <div class="body-bg">
 
-        <div class="columns text-center">
-          <h1>
-            jQuery Stuck
-          </h1>
+      <div class="filter">
+
+        <div id="branding" class="row">
+
+          <div class="columns text-center">
+            <h1>
+              jQuery Stuck
+            </h1>
+          </div>
+
+          <div class="columns text-center">
+            <h4>
+              a responsive sticky element plugin
+            </h4>
+          </div>
+
+          <div class="columns medium-3 hide-for-small-only">&nbsp;</div>
+          <div class="columns small-8 small-centered medium-uncentered medium-3 text-centerx">
+            <a href="docs.html" class="button expand">
+              Read the Docs
+            </a>
+          </div>
+
+          <div class="columns small-8 small-centered medium-uncentered medium-3 text-center">
+            <a href="https://raw.githubusercontent.com/alextaujenis/jquery-stuck/gh-pages/src/jquery.stuck.js" class="button expand">
+              Download
+            </a>
+          </div>
+
         </div>
 
-        <div class="columns text-center">
-          <h4>
-            a responsive sticky element plugin
-          </h4>
-        </div>
-
-        <div class="columns medium-3 hide-for-small-only">&nbsp;</div>
-        <div class="columns small-8 small-centered medium-uncentered medium-3 text-centerx">
-          <a href="docs.html" class="button expand">
-            Read the Docs
-          </a>
-        </div>
-
-        <div class="columns small-8 small-centered medium-uncentered medium-3 text-center">
-          <a href="https://raw.githubusercontent.com/alextaujenis/jquery-stuck/gh-pages/src/jquery.stuck.js" class="button expand">
-            Download
-          </a>
-        </div>
-
-        <div class="columns text-center">
-          <a href="#examples" id="scroll-to-examples">
-            view examples
-          </a>
-        </div>
       </div>
 
-      <div class="row">
-        <div class="columns">
-          <h1 id="examples" class="text-center">
-            Examples
-          </h1>
-        </div>
+    </div>
+
+    <div class="row">
+      <div class="columns">
+        <h1 id="examples" class="text-center">
+          Examples
+        </h1>
+      </div>
+    </div>
+
+    <div class="row image-grid">
+
+      <div class="columns small-6 medium-4">
+        <a href="gh-pages/example/stuck.html">
+          <div class="columns title text-center">
+            stuck
+          </div>
+          <img src="gh-pages/img/stuck.png">
+        </a>
       </div>
 
-      <div class="row image-grid">
+      <div class="columns small-6 medium-4">
+        <a href="gh-pages/example/release.html">
+          <div class="columns title text-center">
+            release
+          </div>
+          <img src="gh-pages/img/release.png">
+        </a>
+      </div>
 
-        <div class="columns small-6 medium-4">
-          <a href="gh-pages/example/stuck.html">
-            <div class="columns title text-center">
-              stuck
-            </div>
-            <img src="gh-pages/img/stuck.png">
-          </a>
-        </div>
+      <div class="columns small-6 medium-4">
+        <a href="gh-pages/example/margins.html">
+          <div class="columns title text-center">
+            margins
+          </div>
+          <img src="gh-pages/img/margins.png">
+        </a>
+      </div>
+      <div class="columns small-6 medium-4">
+        <a href="#examples" data-tooltip aria-haspopup="true" class="has-tip tip-top" title="Coming soon!">
+          <div class="columns title text-center">
+              dynamic
+          </div>
+          <img src="gh-pages/img/dynamic.png">
+        </a>
+      </div>
+      <div class="columns small-6 medium-4">
+        <a href="gh-pages/example/responsive.html">
+          <div class="columns title text-center">
+            responsive
+          </div>
+          <img src="gh-pages/img/responsive.png">
+        </a>
+      </div>
 
-        <div class="columns small-6 medium-4">
-          <a href="gh-pages/example/release.html">
-            <div class="columns title text-center">
-              release
-            </div>
-            <img src="gh-pages/img/release.png">
-          </a>
-        </div>
-
-        <div class="columns small-6 medium-4">
-          <a href="gh-pages/example/margins.html">
-            <div class="columns title text-center">
-              margins
-            </div>
-            <img src="gh-pages/img/margins.png">
-          </a>
-        </div>
-        <div class="columns small-6 medium-4">
-          <a href="#examples" data-tooltip aria-haspopup="true" class="has-tip tip-top" title="Coming soon!">
-            <div class="columns title text-center">
-                dynamic
-            </div>
-            <img src="gh-pages/img/dynamic.png">
-          </a>
-        </div>
-        <div class="columns small-6 medium-4">
-          <a href="gh-pages/example/responsive.html">
-            <div class="columns title text-center">
-              responsive
-            </div>
-            <img src="gh-pages/img/responsive.png">
-          </a>
-        </div>
-
-        <div class="columns small-6 medium-4">
-          <a href="gh-pages/example/performance.html">
-            <div class="columns title text-center">
-              performance
-            </div>
-            <img src="gh-pages/img/performance.png">
-          </a>
-        </div>
+      <div class="columns small-6 medium-4">
+        <a href="gh-pages/example/performance.html">
+          <div class="columns title text-center">
+            performance
+          </div>
+          <img src="gh-pages/img/performance.png">
+        </a>
       </div>
     </div>
   </div>
@@ -167,8 +166,6 @@
   <script src='http://cdnjs.cloudflare.com/ajax/libs/foundation/5.3.3/js/foundation.min.js'></script>
 
   <script src="gh-pages/js/prism-theme.min.js" type="text/javascript"></script>
-  <script src="gh-pages/js/app.js" type="text/javascript"></script>
-  <script src="gh-pages/js/branding.js" type="text/javascript"></script>
   <script src="src/jquery.stuck.js" type="text/javascript"></script>
 
   <script type="text/javascript">
