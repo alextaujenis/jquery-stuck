@@ -1,5 +1,6 @@
 .body-bg {
-  background-image: url('../img/stylish-cat.jpeg');
+  background-color: black;
+  background-image: url('../img/universe.jpg');
   background-size: cover;
   z-index: -1;
   top: 0;
@@ -22,7 +23,7 @@
 
 .filter {
   height: 60vh;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.4);
 }
 
 #branding h1 {
