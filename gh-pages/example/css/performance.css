@@ -26,12 +26,6 @@ body {
   float: left;
 }
 
-.light-blue, .dark-blue, .brown, .red, .yellow, .green {
-  -webkit-box-shadow: 3px 7px 35px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 3px 7px 35px 0px rgba(0,0,0,0.75);
-  box-shadow: 3px 7px 35px 0px rgba(0,0,0,0.75);
-}
-
 .light-blue {
   background-color: #35a7ff;
 }
