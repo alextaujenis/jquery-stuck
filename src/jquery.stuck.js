@@ -214,7 +214,7 @@
                 "z-index": 99
               });
             }
-            if (!el.fixed && window_top > el.top - el.top_offset) {
+            if (!el.fixed && window_top >= el.top - el.top_offset) {
               el.fixed = true;
               el.spacer.show();
               el.node.css({

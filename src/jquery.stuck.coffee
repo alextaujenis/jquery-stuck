@@ -271,7 +271,7 @@
               "z-index": 99
 
           # If the element is not fixed and the window is scrolled past its stacked position
-          if !el.fixed && window_top > el.top - el.top_offset
+          if !el.fixed && window_top >= el.top - el.top_offset
             # Make the element fixed
             el.fixed = true
 
