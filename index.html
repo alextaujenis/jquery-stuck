@@ -131,14 +131,7 @@
           <img src="gh-pages/img/margins.png">
         </a>
       </div>
-      <div class="columns small-6 medium-4">
-        <a href="#examples" data-tooltip aria-haspopup="true" class="has-tip tip-top" title="Coming soon!">
-          <div class="columns title text-center">
-              dynamic
-          </div>
-          <img src="gh-pages/img/dynamic.png">
-        </a>
-      </div>
+
       <div class="columns small-6 medium-4">
         <a href="gh-pages/example/responsive.html">
           <div class="columns title text-center">
@@ -173,12 +166,6 @@
 
     // Wait for the page to laod
     $(document).ready(function(){
-      // Create the responsive branding display
-      new App.Branding("#branding");
-
-      // Show the reveal content after adjusting the branding size
-      $("#reveal").animate({opacity: 1});
-
       // Initialize the stuck plugin
       $(window).stuck();
 
