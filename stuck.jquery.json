@@ -21,12 +21,12 @@
     "licenses": [
         {
             "type": "MIT",
-            "url": "http://opensource.org/licenses/mit-license.php"
+            "url": "https://opensource.org/licenses/mit-license.php"
         }
     ],
     "bugs": "https://github.com/alextaujenis/jquery-stuck/issues",
-    "homepage": "http://alextaujenis.github.io/jquery-stuck/",
-    "docs": "http://alextaujenis.github.io/jquery-stuck/docs.html",
+    "homepage": "https://alextaujenis.github.io/jquery-stuck/",
+    "docs": "https://alextaujenis.github.io/jquery-stuck/docs.html",
     "download": "https://raw.githubusercontent.com/alextaujenis/jquery-stuck/gh-pages/src/jquery.stuck.js",
     "dependencies": {
         "jquery": ">=1.5"
